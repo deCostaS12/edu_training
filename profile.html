@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        .profile {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+        }
+        
+        .profile p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+
+
+        <!-- Navigation links -->
+        <div class="navButtons">
+            <button onclick="location.href='home.html'"  class="navBtn">Home</button>
+            <button onclick="location.href='courses.php'" class="navBtn">Courses</button>
+            <button class="navBtn">Timetables</button>
+            <button onclick="location.href='payments.php'" class="navBtn">Payment</button>
+            <button onclick="location.href='about.html'" class="navBtn" id="homeBtn">Contact</button>
+            
+        </div>
+        
+        
+        <!-- Search & Sign up -->
+        <div class="navSearch">
+
+            <!-- search bar image & input -->
+            <div class="searchFull">
+            <img id="searchGlass"src="./images/search.png" alt="search" width="15px" height="15px">
+            <input id="searchbar" type="text" placeholder="Search..">
+            </div>
+
+
+            <button id="signup" onclick="location.href='home.html'">Sign Up</button>
+
+        </div>
+    </div>
+
+    <div class="profile">
+        <h1>Profile</h1>
+        <p><strong>First Name:</strong> </p>
+        <p><strong>Last Name:</strong> </p>
+        <p><strong>Username:</strong> </p>
+        <p><strong>Email:</strong> </p>
+        <p><strong>Date of Birth:</strong> </p>
+        <p><strong>Age:</strong> </p>
+    </div>
+
+
+    <!-- Footer Code -->
+<hr width="1200px">
+
+<div class="footer">
+    
+    
+
+    <!-- rights -->
+    <div> &copy; 2023 Sliit students, inc. All rights reserved </div>
+
+
+    <!-- Social media links -->
+    <div>
+        <img class="logos" src="./images/fb.png" alt="fb logo" width="20px" height="20px">
+        <img class="logos" src="./images/twitter.png" alt="" width="20px" height="20px">
+        <img class="logos" src="./images/instagram.png" alt="ig logo" width="20px" height="20px">
+        <img class="logos" src="./images/linkedin.png" alt="" width="20px" height="20px">
+       
+    </div>
+
+
+</div>
+</body>
+</html>

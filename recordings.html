@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recordings.css">
+</head>
+<body>
+    <div>
+        <!-- Header code -->
+    <div class="header">
+
+
+        <!-- Navigation links -->
+        <div class="navButtons">
+            <button onclick="location.href='home.html'"  class="navBtn">Home</button>
+            <button onclick="location.href='courses.php'" class="navBtn">Courses</button>
+            <button class="navBtn">Timetables</button>
+            <button onclick="location.href='payments.php'" class="navBtn">Payment</button>
+            <button onclick="location.href='about.html'" class="navBtn" id="homeBtn">Contact</button>
+            
+        </div>
+        
+        
+        <!-- Search & Sign up -->
+        <div class="navSearch">
+
+            <!-- search bar image & input -->
+            <div class="searchFull">
+            <img id="searchGlass"src="./images/search.png" alt="search" width="15px" height="15px">
+            <input id="searchbar" type="text" placeholder="Search..">
+            </div>
+
+
+            <button id="signup" onclick="location.href='home.html'">Sign Up</button>
+
+        </div>
+        </div>
+        </div>
+
+
+        <div class="title">
+
+            Lecture Recordings
+
+        </div>
+
+        <div class="recSearch">
+        <input type="search" >
+        <input type="date">
+
+         </div>
+         <br><br>
+    <!-- File upload form -->
+    <form action="" method="POST" enctype="multipart/form-data">
+        <input type="file" name="recording" required>
+        <input type="submit" value="Upload">
+    </form>
+
+    <hr>
+
+    <!-- Display uploaded recordings -->
+    <h2>Uploaded Recordings</h2>
+        <!-- Footer Code -->
+    <hr width="1200px">
+
+    <div class="footer">
+        
+        
+
+        <!-- rights -->
+        <div> &copy; 2023 Sliit students, inc. All rights reserved </div>
+
+
+        <!-- Social media links -->
+        <div>
+            <img class="logos" src="./images/fb.png" alt="fb logo" width="20px" height="20px">
+            <img class="logos" src="./images/twitter.png" alt="" width="20px" height="20px">
+            <img class="logos" src="./images/instagram.png" alt="ig logo" width="20px" height="20px">
+            <img class="logos" src="./images/linkedin.png" alt="" width="20px" height="20px">
+           
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+

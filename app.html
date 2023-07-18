@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Edu Training</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header code -->
+    <div class="header">
+
+
+        <!-- Navigation links -->
+        <div class="navButtons">
+            <button onclick="location.href='home.html'" id="homeBtn" class="navBtn">Home</button>
+            <button onclick="location.href='courses.php'" class="navBtn">Courses</button>
+            <button class="navBtn">Timetables</button>
+            <button onclick="location.href='payments.php'" class="navBtn">Payment</button>
+            <button onclick="location.href='about.html'" class="navBtn">About Us</button>
+            
+            
+        </div>
+        
+        
+        <!-- Search & Sign up -->
+        <div class="navSearch">
+
+            <!-- search bar image & input -->
+            <div class="searchFull">
+            <img id="searchGlass"src="./images/search.png" alt="search" width="15px" height="15px">
+            <input id="searchbar" type="text" placeholder="Search..">
+            </div>
+
+
+            <button id="signup" onclick="location.href='Registrationpage.html'">Sign Up</button>
+
+        </div>
+    
+    
+    
+    
+    </div>
+
+
+    <!-- Code for the word slide show -->
+    <div class="slide">
+
+        <div class="slideshow">
+            <span id="word"></span>
+        </div>
+
+
+    </div>
+
+
+    <!-- JS for the code slideshow -->
+    <script>
+        var words = ["Welcome to EduTraining!", "Training & Development Done In One Platform!", "Upskill & Reach New Heights!"];
+        var currentIndex = 0;
+        var wordElement = document.getElementById("word");
+
+        function showNextWord() {
+            wordElement.textContent = words[currentIndex];
+            currentIndex = (currentIndex + 1) % words.length;
+            setTimeout(showNextWord, 2000); 
+        }
+
+        showNextWord();
+    </script>
+
+
+    <div class="highlights">
+        <div class="training">
+            <div class="trainheader">Training</div>
+            <div class="trainDesc">We provide a wide range of training in education and youth settings for teachers and young people around positive relationships</div>
+            <button class="trainbtn">Join Us &#8594;</button>
+        </div>
+        <div class="training">
+            <div class="trainheader">Flexible Times</div>
+            <div class="trainDesc">We provide felexible class schedules to all the teachers that has joined us. Also we provide recordings of each class so you can watch it anytime you want</div>
+            <button class="trainbtn">Join Us &#8594;</button>
+        </div>
+        <div class="training">
+            <div class="trainheader">Stay</div>
+            <div class="trainDesc">To stay in the loop on upcoming trainings, Subscribe to our email notifications</div>
+            <button class="trainbtn">Join Us &#8594;</button>
+        </div>
+    </div>
+
+
+    <div class="contact">
+    <hr #id="hr" width="800px">
+    <div #id="contact">Contact Us</div>
+    </div>
+
+    <div class="contacts">
+        <div class="contactbox">
+            <div class="contactitem">Phone</div>
+            <div>+94775915518</br>+94770625874</div>
+        </div>
+        <div class="contactbox">
+            <div class="contactitem">Email</div>
+            <div>info@edutraining.com</div>
+        </div>
+        <div class="contactbox">
+            <div class="contactitem">Address</div>
+            <div>119, Main Street</br>Colombo, Sri Lanka</div>
+        </div>
+    </div>
+    
+
+
+    <!-- Footer Code -->
+    <hr width="1200px">
+
+    <div class="footer">
+        
+        
+
+        <!-- rights -->
+        <div> &copy; 2023 Sliit students, inc. All rights reserved </div>
+
+
+        <!-- Social media links -->
+        <div>
+            <img class="logos" src="./images/fb.png" alt="fb logo" width="20px" height="20px">
+            <img class="logos" src="./images/twitter.png" alt="" width="20px" height="20px">
+            <img class="logos" src="./images/instagram.png" alt="ig logo" width="20px" height="20px">
+            <img class="logos" src="./images/linkedin.png" alt="" width="20px" height="20px">
+           
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #video-background {
+              position: fixed;
+              right: 0;
+              bottom: 0;
+              min-width: 100%;
+              min-height: 100%;
+              width: auto;
+              height: auto;
+              z-index: -1;
+            }
+          </style>
+        <title>Registration Page</title>
+        <link rel = "stylesheet" href="registration.css">
+    </head>
+    <body>
+
+        <video id="video-background" autoplay loop muted>
+            <source src="images/bgvideo.mp4" type="video/mp4">
+   
+          </video>
+        
+
+        
+          <script>
+            // Pause the video when the page is unloaded
+            window.addEventListener('beforeunload', function() {
+              var video = document.getElementById('video-background');
+              video.pause();
+            });
+          </script>
+
+        <!-- Header code -->
+    <div class="header">
+
+
+        <!-- Navigation links -->
+        <div class="navButtons">
+            <button onclick="location.href='home.html'"  class="navBtn">Home</button>
+            <button onclick="location.href='courses.php'" class="navBtn">Courses</button>
+            <button class="navBtn">Timetables</button>
+            <button onclick="location.href='payments.php'" class="navBtn">Payment</button>
+            <button onclick="location.href='about.html'" class="navBtn" id="homeBtn">Contact</button>
+            
+        </div>
+        
+        
+        <!-- Search & Sign up -->
+        <div class="navSearch">
+
+            <!-- search bar image & input -->
+            <div class="searchFull">
+            <img id="searchGlass"src="./images/search.png" alt="search" width="15px" height="15px">
+            <input id="searchbar" type="text" placeholder="Search..">
+            </div>
+
+
+            <button id="signup" onclick="location.href='home.html'">Sign Up</button>
+
+        </div>
+    </div>
+
+        <div class="content">
+            <div class="fm">
+        <fieldset>
+            <h1 style = "text-align: center">Register As A Teacher<h1>
+                <form action = "regTest.php" method="post">
+                    <h4> First Name: </h4>
+                    <input type="text" name="firstname" placeholder="Enter your first name" required> 
+                    <h4> Last Name: </h4>
+                    <input type="text" name="lastname" placeholder="Enter your last name"required> 
+                    <h4> Enter your Date Of Birth: </h4>
+                    <input type="date" name="dob" required>
+                    <h4> Enter your Age: </h4>
+                    <input type="text" name="age" placeholder="Enter your age" required>
+                    <h4> Enter your NIC: </h4>
+                    <input type="text" name="nic" placeholder="Enter your NIC" required>
+                    <h4> Enter your Address: </h4>
+                    <input type="text" name="address" placeholder="Enter your address" required>
+                    <h4>Email: </h4>
+                    <input type="email" name="email" placeholder="Enter email here" required>
+                    <h4>Contact Number : </h4>
+                    <input type = "text" size = "10" required>
+                    <h4>Username</h4>
+                   <input type="username" id="username" name="username" placeholder="Enter Username " required>
+                   <h4>Password:<h4>
+                <input type="password" id="pwd" name="password" placeholder="Enter password " required><br><br>
+                <button class="button" type="submit" name="register" value="register">Register</button><br><br>
+                </form>
+            
+            </fieldset>
+    </div>
+</div>
+
+<!-- Footer Code -->
+<hr width="1200px">
+
+<div class="footer">
+    
+    
+
+    <!-- rights -->
+    <div> &copy; 2023 Sliit students, inc. All rights reserved </div>
+
+
+    <!-- Social media links -->
+    <div>
+        <img class="logos" src="./images/fb.png" alt="fb logo" width="20px" height="20px">
+        <img class="logos" src="./images/twitter.png" alt="" width="20px" height="20px">
+        <img class="logos" src="./images/instagram.png" alt="ig logo" width="20px" height="20px">
+        <img class="logos" src="./images/linkedin.png" alt="" width="20px" height="20px">
+       
+    </div>
+
+
+</div>
+
+    </body>
+</html>

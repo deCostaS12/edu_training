@@ -1,0 +1,260 @@
+
+.navButtons {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 25px;
+    margin-left: 100px;
+  }
+
+  .navBtn{
+    background-color: white;
+    border-style: none;
+    color: rgb(94, 93, 93);
+  }
+  .navBtn:hover{
+    background-color: white;
+    color: rgb(44, 175, 164);
+  }
+
+  
+
+  .header{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      font-size: larger;
+  }
+
+
+.navSearch {
+  display: flex;
+  margin-right: 100px;
+  gap: 30px;
+
+}
+
+#signup{
+  background-color: rgb(44, 175, 164);
+  box-shadow: 5px 5px black; 
+  color: white;
+  font-size:small;
+  
+
+}
+
+#searchbar{
+  
+  
+  font-size: small;
+  padding: 2px;
+  border-style: none;
+
+}
+
+#searchGlass {
+  display: flex;
+  margin-top: 5px;
+  justify-self: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: 10px;
+  border-color: black;
+}
+
+.searchFull{
+  display: flex;
+  box-shadow: 5px 5px black; 
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+#homeBtn {
+    color: rgb(44, 175, 164);
+
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+
+}
+
+hr {
+  margin-top: 50px;
+}
+
+.logos{
+  background-color: rgb(44, 175, 164);
+  padding: 2px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 2px 2px black; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.btnn
+{
+    width: 100px;
+    height: 40px;
+    background: green;
+    border: 2px solid green;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+.srch:focus
+{
+    outline: none;
+}
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    width: 1200 px;
+    height: auto;
+    margin-right: 500px;
+    margin-top: 50px;
+    color: rgb(3, 3, 3);
+    position: relative;
+}
+
+.content .par
+{
+    padding-left: 20px;
+    padding-bottom: 25px;
+	margin-left:40px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+
+}
+
+.content h1
+{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+	margin-left: 40px;
+    letter-spacing: 2px;
+
+}
+
+.form
+{
+        
+		width: 250px;
+		height: 380px;
+		background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+		position: center;
+		top: -20px;
+		left: 960px;
+		border-radius: 10px;
+		padding: 25px;
+}
+
+.form h2
+{
+	width: 220px;
+	font-family: sans-serif;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	background-color:rgb(44, 175, 164);
+	border-radius: 10px;
+	margin: 2px;
+	padding: 8px;
+}
+
+.form input
+{
+	width: 240px;
+	height: 35px;
+	background: transparent;
+	border-bottom: 1px solid rgb(44, 175, 164);
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	font-family: sans-serif;
+	
+}
+
+#toggle
+{
+	position: absolute;
+	top: 40%;
+	right: 20px;
+	transform: translate(-50%);
+	width: 30px;
+	height: 30px;
+	background: url("hiddenimage.jpg");
+	background-size: cover;
+	cursor: pointer;
+
+}
+
+.btnn
+{
+		width: 240px;
+		height: 40px;
+		background: rgb(44, 175, 164);
+		border: none;
+		margin-top: 30px;
+		font-size: 18px;
+		border-radius: 10px;
+		color: rgb(254, 254, 254);
+	
+}
+
+.btnn:hover
+{
+		background-color: white;
+	
+}
+
+.btnn a
+{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	
+}
+
+.form .link
+{
+	font-family: Arial;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.form .link a
+{
+	text-decoration:underline;
+	text-align: center;
+	color: rgb(15, 46, 184);
+	
+}
+
+.form .link a:hover{
+	color: white;
+	
+}
+	
+

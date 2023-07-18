@@ -1,0 +1,183 @@
+.fm h4
+{
+	margin-top;: 5px
+	font-family: sans-serif;
+	text-align:left;
+	color:white;
+	font-size: 19px;
+};
+
+.button {
+    background-color: rgb(44, 175, 164); /* Green */
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btnn a
+{
+	text-decoration: none;
+	color: black;
+	
+}
+
+body {
+ 
+    background-color: #ffffff;
+    background-repeat: repeat; 
+    background-size: cover;
+   }
+
+   .content
+{
+    width: 1200 px;
+    height: auto;
+    margin: auto;
+    color:rgb(255, 255, 255) ;
+    position: relative;
+}
+
+.fm
+{
+		width: 500px;
+		height: 1500px;
+		background:rgb(0, 0, 0);
+        box-shadow: 5px 5px rgb(160, 160, 160);
+		position: relative;
+		margin-top: 30px;
+        margin-left: 500px;
+		align-items: center;
+		border-radius: 10px;
+        border-color:white;
+		padding: 25px;
+}
+
+
+.fm input
+{
+	width: 240px;
+	height: 25px;
+	background: rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(14, 223, 185);
+	border-top:none;
+	border-right: none;
+	border-left: none;
+	color: rgb(0, 0, 0);
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-top: 16px;
+	font-family: sans-serif;
+}
+
+.btnn:hover
+{
+		background-color: white;
+	
+}
+
+.btnn a
+{
+	text-decoration: bold;
+	color: black;
+	
+}
+
+
+.navButtons {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 25px;
+    margin-left: 100px;
+  }
+
+  .navBtn{
+    background-color: white;
+    border-style: none;
+    color: rgb(94, 93, 93);
+  }
+  .navBtn:hover{
+    background-color: white;
+    color: rgb(44, 175, 164);
+  }
+
+  
+
+  .header{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      font-size: larger;
+  }
+
+
+.navSearch {
+  display: flex;
+  margin-right: 100px;
+  gap: 30px;
+
+}
+
+#signup{
+  background-color: rgb(44, 175, 164);
+  box-shadow: 5px 5px black; 
+  color: white;
+  font-size:small;
+  
+
+}
+
+#searchbar{
+  
+  
+  font-size: small;
+  padding: 2px;
+  border-style: none;
+
+}
+
+#searchGlass {
+  display: flex;
+  margin-top: 5px;
+  justify-self: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: 10px;
+  border-color: black;
+}
+
+.searchFull{
+  display: flex;
+  box-shadow: 5px 5px black; 
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+#homeBtn {
+    color: rgb(44, 175, 164);
+
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+
+}
+
+hr {
+  margin-top: 50px;
+}
+
+.logos{
+  background-color: rgb(44, 175, 164);
+  padding: 2px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 2px 2px black; 
+}

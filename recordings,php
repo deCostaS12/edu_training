@@ -1,0 +1,31 @@
+    <?php
+
+       // Configuration
+       $uploadDirectory = 'uploads/'; // Directory where uploaded recordings will be stored
+
+       // Handle file upload
+       if(isset($_FILES['recording']) && $_FILES['recording']['error'] === UPLOAD_ERR_OK){
+           $tempName = $_FILES['recording']['tmp_name'];
+           $fileName = $_FILES['recording']['name'];
+           $filePath = $uploadDirectory . $fileName;
+   
+           if(move_uploaded_file($tempName, $filePath)){
+               echo "The recording '$fileName' has been uploaded successfully.";
+           } else {
+               echo "Sorry, there was an error uploading your recording.";
+           }
+       }
+       
+    $recordings = glob($uploadDirectory . '*'); // Get all files in the upload directory
+
+    if(count($recordings) === 0){
+        echo "No recordings uploaded yet.";
+    } else {
+        echo "<ul>";
+        foreach($recordings as $recording){
+            $recordingName = basename($recording);
+            echo "<li><a href='$recording'>$recordingName</a></li>";
+        }
+        echo "</ul>";
+    }
+    ?> 

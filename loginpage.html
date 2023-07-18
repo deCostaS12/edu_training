@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="login.css">
+        <style>
+            #video-background {
+              position: fixed;
+              right: 0;
+              bottom: 0;
+              min-width: 100%;
+              min-height: 100%;
+              width: auto;
+              height: auto;
+              z-index: -1;
+            }
+          </style>
+    </head>
+
+    <body>
+
+        <video id="video-background" autoplay loop muted>
+            <source src="images/bgvideo.mp4" type="video/mp4">
+           
+          </video>
+        
+    
+        
+          <script>
+         
+            window.addEventListener('beforeunload', function() {
+              var video = document.getElementById('video-background');
+              video.pause();
+            });
+          </script>
+
+    <div class="header">
+
+
+     
+        <!-- Navigation links -->
+        <div class="navButtons">
+            <button onclick="location.href='home.html'"  class="navBtn">Home</button>
+            <button onclick="location.href='courses.php'" class="navBtn">Courses</button>
+            <button class="navBtn">Timetables</button>
+            <button onclick="location.href='payments.php'" class="navBtn">Payment</button>
+            <button onclick="location.href='about.html'" class="navBtn" >Contact</button>
+            
+        </div>
+        
+        
+        <!-- Search & Sign up -->
+        <div class="navSearch">
+
+            <!-- search bar image & input -->
+            <div class="searchFull">
+            <img id="searchGlass"src="./images/search.png" alt="search" width="15px" height="15px">
+            <input id="searchbar" type="text" placeholder="Search..">
+            </div>
+
+
+            <button id="signup" onclick="location.href='home.html'">Sign Up</button>
+
+        </div>
+
+        </div>
+    </div>
+
+        <div class="content">
+
+            <h1>Edu Training</h1>
+            <p class="par"> Our online teacher training platform is a comprehensive and user-friendly website that caters to the needs of teachers looking to expand their teaching expertise in an online setting. The platform offers a wide array of courses and resources specifically designed to meet the unique challenges faced by virtual educators. </p>
+				
+				<div class="form">
+                    <form action="login.php" method="post">
+					<h2>Login here</h2>
+					<input type="username" name="username" placeholder="Enter email here">
+					<input type= "password" name="password" placeholder="Enter password here" id="password">
+
+					<button class="btnn"><a href="#">Login</a></button>
+					
+					<p class="link">Don't have any account?<br><a href="#">Sign up here</a></p></form>
+				</div>
+			</div>
+
+        </div>
+
+        <!-- Footer Code -->
+<hr width="1200px">
+
+<div class="footer">
+    
+    
+
+    <!-- rights -->
+    <div> &copy; 2023 Sliit students, inc. All rights reserved </div>
+
+
+    <!-- Social media links -->
+    <div>
+        <img class="logos" src="./images/fb.png" alt="fb logo" width="20px" height="20px">
+        <img class="logos" src="./images/twitter.png" alt="" width="20px" height="20px">
+        <img class="logos" src="./images/instagram.png" alt="ig logo" width="20px" height="20px">
+        <img class="logos" src="./images/linkedin.png" alt="" width="20px" height="20px">
+       
+    </div>
+
+
+</div>
+    </body>
+</html>
